@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>秀長さんゆかりの地スタンプラリー｜大和郡山市</title>
+<meta name="description" content="大河ドラマ「豊臣兄弟！」連動。大和郡山市の豊臣秀長ゆかりの地をめぐるデジタルスタンプラリー。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Serif+JP:wght@600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- [REPLACE:header_logo] -->
+<header class="site-header">
+  <div class="site-header__inner">
+    <div class="placeholder placeholder--logo" aria-label="自治体ロゴ">大和郡山市</div>
+  </div>
+</header>
+
+<!-- [REPLACE:kv] -->
+<section class="kv">
+  <div class="kv__visual">
+    <picture>
+      <source media="(max-width: 768px)" srcset="assets/hero-mobile.webp">
+      <img src="assets/hero-pc.webp" alt="秀長さんゆかりの地スタンプラリー メインビジュアル" class="kv__img">
+    </picture>
+  </div>
+</section>
+
+<div class="contentWrapper">
+
+  <!-- つなぎメッセージ1 -->
+  <section class="tie">
+    <p class="band band--red">
+      <img src="assets/illust_goldfish_koganeirodori.png" class="deco-fish deco-fish--left" alt="">
+      秀長さんゆかりの地スタンプラリー
+      <img src="assets/illust_goldfish_edonishiki.png" class="deco-fish deco-fish--right" alt="">
+    </p>
+    <p class="tie__desc">大和郡山のまちを歩いて、<br class="spBlock">豊臣秀長の足跡をめぐろう。<br class="spBlock">スマホひとつで、今すぐ参加できます。</p>
+  </section>
+
+  <!-- [REPLACE:usage] -->
+  <section class="content">
+    <div class="content__inner">
+      <div class="usage">
+        <div class="usage__box jsFadeIn">
+          <h3>参加登録不要</h3>
+          <img src="assets/illust_step1_map.png" class="usage__icon" alt="">
+          <p>マップからすぐに<br>参加できます</p>
+        </div>
+        <div class="usage__box jsFadeIn delay1">
+          <h3>まちを歩く</h3>
+          <img src="assets/illust_step2_walk.png" class="usage__icon" alt="">
+          <p>対象スポットを巡って<br>スタンプを集めよう</p>
+        </div>
+        <div class="usage__box jsFadeIn delay2">
+          <h3>応募する</h3>
+          <img src="assets/illust_step3_castle.png" class="usage__icon" alt="">
+          <p>集めたポイント数に応じて、<br>景品抽選に応募できます。</p>
+        </div>
+      </div>
+
+      <!-- [REPLACE:map] -->
+      <div id="map">
+        <h3 class="band band--red">ピンをタップしてスポット情報をチェック</h3>
+        <div class="mapImg">
+          <div class="mapImg__frame">
+            <!-- [REPLACE:map_embed_url] Strolyマップの埋め込みURL -->
+            <iframe src="https://stroly.com/viewer/1765356781" title="秀長さんゆかりの地スタンプラリー マップ" loading="lazy" allow="geolocation"></iframe>
+          </div>
+        </div>
+
+        <h4 class="band band--teal">
+          <img src="assets/illust_goldfish_tosakin.png" class="deco-fish deco-fish--left" alt="">
+          おすすめスポット
+          <img src="assets/illust_goldfish_tancho.png" class="deco-fish deco-fish--right" alt="">
+        </h4>
+        <div class="spot-nav">
+          <button id="spotPrev" aria-label="前へ">‹</button>
+          <button id="spotNext" aria-label="次へ">›</button>
+        </div>
+        <div class="spot-scroll" id="spotsTrack">
+          <a class="spot-card" href="https://stroly.com/viewer/1765356781" target="_blank">
+            <img src="assets/天守台.jpg" alt="天守台" class="spot-card__img" loading="lazy">
+            <div class="spot-card__body">
+              <span class="spot-card__number">01</span>
+              <h5 class="spot-card__name">天守台（大和郡山城跡）</h5>
+              <p class="spot-card__catch">まちを一望する、城のいちばん高い場所</p>
+              <p class="spot-card__text">豊臣秀長が築いた郡山城の中心。今も残る高石垣からは、大和郡山のまちを一望できます。</p>
+            </div>
+          </a>
+          <a class="spot-card" href="https://stroly.com/viewer/1765356781" target="_blank">
+            <img src="assets/春岳院.jpg" alt="春岳院" class="spot-card__img" loading="lazy">
+            <div class="spot-card__body">
+              <span class="spot-card__number">02</span>
+              <h5 class="spot-card__name">春岳院</h5>
+              <p class="spot-card__catch">秀長公が眠る、静かな菩提寺</p>
+              <p class="spot-card__text">秀長の菩提寺。ゆかりの品々が残されており、当時の面影を静かに感じられる場所です。</p>
+            </div>
+          </a>
+          <a class="spot-card" href="https://stroly.com/viewer/1765356781" target="_blank">
+            <img src="assets/紺屋.jpg" alt="箱本館「紺屋」" class="spot-card__img" loading="lazy">
+            <div class="spot-card__body">
+              <span class="spot-card__number">03</span>
+              <h5 class="spot-card__name">箱本館「紺屋」</h5>
+              <p class="spot-card__catch">城下町の自治の歴史を今に伝える</p>
+              <p class="spot-card__text">城下町の自治組織「箱本十三町」の歴史を紹介する施設。当時の商家町の暮らしがわかります。</p>
+            </div>
+          </a>
+          <a class="spot-card" href="https://stroly.com/viewer/1765356781" target="_blank">
+            <img src="assets/天守台.jpg" alt="天守台" class="spot-card__img" loading="lazy">
+            <div class="spot-card__body">
+              <span class="spot-card__number">04</span>
+              <h5 class="spot-card__name">天守台（大和郡山城跡）</h5>
+              <p class="spot-card__catch">まちを一望する、城のいちばん高い場所</p>
+              <p class="spot-card__text">豊臣秀長が築いた郡山城の中心。今も残る高石垣からは、大和郡山のまちを一望できます。</p>
+            </div>
+          </a>
+          <a class="spot-card" href="https://stroly.com/viewer/1765356781" target="_blank">
+            <img src="assets/春岳院.jpg" alt="春岳院" class="spot-card__img" loading="lazy">
+            <div class="spot-card__body">
+              <span class="spot-card__number">05</span>
+              <h5 class="spot-card__name">春岳院</h5>
+              <p class="spot-card__catch">秀長公が眠る、静かな菩提寺</p>
+              <p class="spot-card__text">秀長の菩提寺。ゆかりの品々が残されており、当時の面影を静かに感じられる場所です。</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- つなぎメッセージ2 -->
+  <section class="tie">
+    <p class="band band--teal">
+      <img src="assets/illust_goldfish_edonishiki.png" class="deco-fish deco-fish--left" alt="">
+      スマホとデジタルマップで秀長さんの足跡を楽しもう！
+      <img src="assets/illust_goldfish_koganeirodori.png" class="deco-fish deco-fish--right" alt="">
+    </p>
+  </section>
+
+  <!-- [REPLACE:about] -->
+  <section class="content">
+    <div class="content__inner">
+      <div class="about">
+        <div class="about__box">
+          <h3><img src="assets/ダウンロード不要.png" class="about__icon" alt="">ダウンロード不要<br>無料で使える</h3>
+          <p>アプリではなくWEBサービスなので<br>誰でも簡単に使用できます。</p>
+          <small>※ご利用の際に発生するパケット通信料はお客様のご負担となります。</small>
+        </div>
+        <div class="about__box">
+          <h3><img src="assets/GPSで迷わず歩ける.png" class="about__icon" alt="">GPSで迷わずに<br>歩ける</h3>
+          <p>スポットに近づくと自動でスタンプ判定。<br>迷うことなく、まちあるきができます。</p>
+          <small>※ご利用の際は、周囲の安全に十分ご注意ください。</small>
+        </div>
+        <div class="about__box">
+          <h3><img src="assets/ピンをタップすると.png" class="about__icon" alt="">ピンをタップすると<br>情報が見られる</h3>
+          <p>タップするだけで、気になるスポットの情報を見ることができます。寄り道をしながら楽しんでみてください。</p>
+        </div>
+        <div class="about__box noBorder">
+          <h3><img src="assets/イベント情報.png" class="about__icon" alt="">景品情報も<br>チェック</h3>
+          <p>スタンプ達成数に応じた景品抽選情報を随時更新！<br>ぜひチェックしてみてください。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- [REPLACE:desc] -->
+  <section class="desc">
+    <div class="desc__inner">
+      <h3 class="band band--orange jsFadeIn">
+        <img src="assets/illust_goldfish_tancho.png" class="deco-fish deco-fish--left" alt="">
+        秀長さんゆかりの地スタンプラリーとは？
+        <img src="assets/illust_goldfish_tosakin.png" class="deco-fish deco-fish--right" alt="">
+      </h3>
+      <p class="jsFadeIn delay1">大和郡山を治めた豊臣秀長。その足跡をたどるデジタルスタンプラリーです。<br>
+      <span>大河ドラマ「豊臣兄弟！」の舞台を、まちあるきで体感できます。</span><br>
+      観光名所としてだけでなく、日常のまちの中に残る歴史を感じられる企画です。</p>
+      <div class="link">
+        <a href="https://www.hidenaga-yamatokoriyama.jp/tourism/#stamprally" target="_blank">大和郡山市の観光情報を詳しく見る▶</a>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- [REPLACE:footer] -->
+<footer>
+  <div class="footer__inner">
+    <p class="footer__name">大和郡山市</p>
+    <p class="footer__links"><a href="https://www.hidenaga-yamatokoriyama.jp/tourism/#stamprally" target="_blank">大和郡山市観光サイト</a></p>
+    <p class="footer__copyright">&copy; 大和郡山市</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
