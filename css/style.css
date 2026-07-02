@@ -1,6 +1,11 @@
 /* ==========================================================
    大和郡山市 秀長さんゆかりの地スタンプラリー LP
    カラー・フォントはCSS変数化 → 他自治体展開時はここだけ差し替え
+
+   [命名メモ] 既存クラス（kv/tie/content/about/desc等）は場当たり的な
+   命名のため一括リネームはしていない。次に新規セクションを追加する際は
+   「l-」= ヘッダー/フッター等サイト共通レイアウト、
+   「p-」= このLP固有のページセクション、の緩いプレフィックスを目安にする。
    ========================================================== */
 
 :root {
@@ -105,17 +110,6 @@ img {
   flex-shrink: 0;
 }
 
-/* ---------- header ---------- */
-.site-header {
-  background: #fff;
-  border-bottom: 1px solid var(--color-border);
-}
-.site-header__inner {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 0.8rem 1.2rem;
-}
-
 /* ---------- KV（ヒーロー：ディスプレイ幅いっぱい、上限あり） ---------- */
 .kv {
   max-width: 1600px;
@@ -131,7 +125,6 @@ img {
   height: auto;
   display: block;
 }
-
 /* ---------- 見出し帯（サイト共通・幅と高さを統一） ---------- */
 .band {
   display: inline-flex;
@@ -376,13 +369,14 @@ img {
   text-align: center;
 }
 .desc__inner {
-  max-width: 560px;
+  max-width: 720px;
   margin: 0 auto;
 }
 .desc p {
+  max-width: 560px;
+  margin: 0 auto 1.4rem;
   font-size: 0.9rem;
   color: var(--color-text-light);
-  margin-bottom: 1.4rem;
 }
 .desc p span {
   color: var(--color-text);
@@ -460,8 +454,8 @@ footer {
     max-width: 19em;
     margin: 0 auto;
   }
-  /* スマホ表示はマップを縦に大きく（PC比で天地3倍ほど） */
+  /* スマホ表示のマップ高さ（2026-07-02: 1/4→1/2に半減） */
   .mapImg__frame iframe {
-    aspect-ratio: 1 / 4;
+    aspect-ratio: 1 / 2;
   }
 }
