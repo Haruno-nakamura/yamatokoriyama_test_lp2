@@ -454,8 +454,8 @@ footer {
     max-width: 19em;
     margin: 0 auto;
   }
-  /* スマホ表示のマップ高さ（2026-07-02: 1/4→1/2に半減） */
+  /* スマホ表示のマップ高さ（2026-07-02: 1/4→1/2→1/1に短縮） */
   .mapImg__frame iframe {
-    aspect-ratio: 1 / 2;
+    aspect-ratio: 1 / 1;
   }
 }
